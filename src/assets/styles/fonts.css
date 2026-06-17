@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Science Gothic";
+  src: url("../fonts/ScienceGothic-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Science Gothic";
+  src: url("../fonts/ScienceGothic-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --font-hero-heading-xl: 3rem;
+  --font-hero-heading-xl-line-height: 3.25rem;
+
+  --font-hero-heading-md: 2rem;
+  --font-hero-heading-md-line-height: 2.5rem;
+
+  --font-hero-heading-sm: 1.375rem;
+  --font-hero-heading-sm-line-height: 1.75rem;
+
+  --font-section-heading-md: 2rem;
+  --font-section-heading-md-line-height: 2.5rem;
+
+  --font-section-sub-heading-md: 1rem;
+  --font-section-sub-heading-md-line-height: 1.5rem;
+
+  --font-paragraph-md: 1rem;
+  --font-paragraph-md-line-height: 1.5rem;
+
+  --font-paragraph-sm: 0.75rem;
+  --font-paragraph-sm-line-height: 1rem;
+
+  --font-title-md: 1.5rem;
+  --font-title-md-line-height: 2rem;
+
+  --font-link-md: 1rem;
+  --font-link-md-line-height: 1.5rem;
+}
+
+@media (min-width: 834px) {
+  :root {
+    --font-hero-heading-xl: 7rem;
+    --font-hero-heading-xl-line-height: 7rem;
+
+    --font-hero-heading-md: 3rem;
+    --font-hero-heading-md-line-height: 3.25rem;
+
+    --font-hero-heading-sm: 2.25rem;
+    --font-hero-heading-sm-line-height: 2.75rem;
+
+    --font-section-heading-md: 2.25rem;
+    --font-section-heading-md-line-height: 2.75rem;
+  }
+}
+
+.type-hero-heading-xl,
+.type-hero-heading-md,
+.type-hero-heading-sm,
+.type-section-heading-md,
+.type-section-sub-heading-md {
+  font-family: "Science Gothic";
+  text-transform: uppercase;
+}
+
+.type-hero-heading-xl,
+.type-hero-heading-md,
+.type-hero-heading-sm,
+.type-section-heading-md {
+  font-weight: 500;
+}
+
+.type-paragraph-md,
+.type-paragraph-sm {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.type-title-md,
+.type-link-md {
+  font-family: "Poppins";
+}
+
+.type-hero-heading-xl {
+  font-size: var(--font-hero-heading-xl);
+  line-height: var(--font-hero-heading-xl-line-height);
+}
+.type-hero-heading-md {
+  font-size: var(--font-hero-heading-md);
+  line-height: var(--font-hero-heading-md-line-height);
+}
+.type-hero-heading-sm {
+  font-size: var(--font-hero-heading-sm);
+  line-height: var(--font-hero-heading-sm-line-height);
+}
+.type-section-heading-md {
+  font-size: var(--font-section-heading-md);
+  line-height: var(--font-section-heading-md-line-height);
+}
+.type-section-sub-heading-md {
+  font-weight: 400;
+  font-size: var(--font-section-sub-heading-md);
+  line-height: var(--font-section-sub-heading-md-line-height);
+}
+
+.type-paragraph-md {
+  font-size: var(--font-paragraph-md);
+  line-height: var(--font-paragraph-md-line-height);
+}
+.type-paragraph-sm {
+  font-size: var(--font-paragraph-sm);
+  line-height: var(--font-paragraph-sm-line-height);
+}
+.type-title-md {
+  font-weight: 600;
+  font-size: var(--font-title-md);
+  line-height: var(--font-title-md-line-height);
+}
+.type-link-md {
+  font-weight: 700;
+  font-size: var(--font-link-md);
+  line-height: var(--font-link-md-line-height);
+}
