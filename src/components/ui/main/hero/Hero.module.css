@@ -1,0 +1,24 @@
+.hero {
+  background-color: var(--color-bg-dark-900);
+}
+
+.hero-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  padding-block: 112px;
+}
+
+.paragraph {
+  max-width: 55ch;
+  text-align: center;
+  color: var(--color-white);
+}
+
+@media (min-width: 834px) {
+  .hero-wrapper {
+    gap: 32px;
+  }
+}
