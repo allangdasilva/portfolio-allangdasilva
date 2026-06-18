@@ -1,0 +1,7 @@
+.tributes_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  padding-bottom: 112px;
+}

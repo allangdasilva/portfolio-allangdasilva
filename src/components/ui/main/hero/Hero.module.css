@@ -12,7 +12,6 @@
 }
 
 .paragraph {
-  max-width: 55ch;
   text-align: center;
   color: var(--color-white);
 }

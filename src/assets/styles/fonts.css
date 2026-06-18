@@ -124,6 +124,7 @@
 }
 
 .type_paragraph_md {
+  max-width: 60ch;
   font-size: var(--font-paragraph-md);
   line-height: var(--font-paragraph-md-line-height);
 }
