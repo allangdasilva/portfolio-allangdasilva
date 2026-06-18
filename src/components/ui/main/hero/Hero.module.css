@@ -2,7 +2,7 @@
   background-color: var(--color-bg-dark-900);
 }
 
-.hero-text-wrapper {
+.hero_text_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@
 }
 
 @media (min-width: 834px) {
-  .hero-wrapper {
+  .hero_text_wrapper {
     gap: 32px;
   }
 }

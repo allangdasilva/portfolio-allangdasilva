@@ -3,7 +3,7 @@ import styles from ".//HeroArrowDown.module.css";
 
 const HeroArrowDown = () => {
   return (
-    <div className={styles["svg-wrapper"]}>
+    <div className={styles.svg_wrapper}>
       <button type="button">
         <ArrowDownSvg />
       </button>

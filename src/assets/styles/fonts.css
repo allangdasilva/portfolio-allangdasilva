@@ -74,69 +74,69 @@
   }
 }
 
-.type-hero-heading-xl,
-.type-hero-heading-md,
-.type-hero-heading-sm,
-.type-section-heading-md,
-.type-section-sub-heading-md {
+.type_hero_heading_xl,
+.type_hero_heading_md,
+.type_hero_heading_sm,
+.type_section_heading_md,
+.type_section_sub_heading_md {
   font-family: "Science Gothic";
   text-transform: uppercase;
 }
 
-.type-hero-heading-xl,
-.type-hero-heading-md,
-.type-hero-heading-sm,
-.type-section-heading-md {
+.type_hero_heading_xl,
+.type_hero_heading_md,
+.type_hero_heading_sm,
+.type_section_heading_md {
   font-weight: 500;
 }
 
-.type-paragraph-md,
-.type-paragraph-sm {
+.type_paragraph_md,
+.type_paragraph_sm {
   font-family: "Poppins";
   font-weight: 500;
 }
 
-.type-title-md,
-.type-link-md {
+.type_title_md,
+.type_link_md {
   font-family: "Poppins";
 }
 
-.type-hero-heading-xl {
+.type_hero_heading_xl {
   font-size: var(--font-hero-heading-xl);
   line-height: var(--font-hero-heading-xl-line-height);
 }
-.type-hero-heading-md {
+.type_hero_heading_md {
   font-size: var(--font-hero-heading-md);
   line-height: var(--font-hero-heading-md-line-height);
 }
-.type-hero-heading-sm {
+.type_hero_heading_sm {
   font-size: var(--font-hero-heading-sm);
   line-height: var(--font-hero-heading-sm-line-height);
 }
-.type-section-heading-md {
+.type_section_heading_md {
   font-size: var(--font-section-heading-md);
   line-height: var(--font-section-heading-md-line-height);
 }
-.type-section-sub-heading-md {
+.type_section_sub_heading_md {
   font-weight: 400;
   font-size: var(--font-section-sub-heading-md);
   line-height: var(--font-section-sub-heading-md-line-height);
 }
 
-.type-paragraph-md {
+.type_paragraph_md {
   font-size: var(--font-paragraph-md);
   line-height: var(--font-paragraph-md-line-height);
 }
-.type-paragraph-sm {
+.type_paragraph_sm {
   font-size: var(--font-paragraph-sm);
   line-height: var(--font-paragraph-sm-line-height);
 }
-.type-title-md {
+.type_title_md {
   font-weight: 600;
   font-size: var(--font-title-md);
   line-height: var(--font-title-md-line-height);
 }
-.type-link-md {
+.type_link_md {
   font-weight: 700;
   font-size: var(--font-link-md);
   line-height: var(--font-link-md-line-height);

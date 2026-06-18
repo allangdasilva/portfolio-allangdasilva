@@ -1,8 +1,8 @@
-.menu-wrapper {
+.menu_wrapper {
   display: flex;
   flex-direction: column;
 }
-.menu-bar {
+.menu_bar {
   height: 8px;
   width: 40px;
   background-color: var(--color-text-yellow-500);

@@ -8,13 +8,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.max-width-container {
+.max_width_container {
   max-width: 992px;
   margin-inline: auto;
   padding-inline: 16px;
 }
 
-.sr-only {
+.sr_only {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
