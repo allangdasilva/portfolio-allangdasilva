@@ -5,7 +5,7 @@ type Props = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
 const ExternalLink = ({ children, ...props }: Props) => {
   return (
     <a {...props} target="_blank" rel="noopener noreferrer">
-      {children}
+      &#8226; {children} &#8226;
     </a>
   );
 };
