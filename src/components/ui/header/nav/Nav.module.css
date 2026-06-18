@@ -1,11 +1,7 @@
 .nav {
-  max-width: 992px;
-  margin-inline: auto;
-
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 
   padding-block: 32px;
-  padding-inline: 16px;
 }

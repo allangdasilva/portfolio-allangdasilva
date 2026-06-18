@@ -3,7 +3,7 @@ import styles from "./Nav.module.css";
 
 const Nav = () => {
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} max-width-container`}>
       <Menu />
     </nav>
   );
