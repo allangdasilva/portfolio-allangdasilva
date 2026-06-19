@@ -9,7 +9,7 @@ const Hero = () => {
       <div className={"max_width_container"}>
         <div className={styles.hero_text_wrapper}>
           <HeroHeading />
-          <Paragraph className={`${styles.paragraph} type_paragraph_md`}>
+          <Paragraph className={styles.paragraph}>
             Sou Allan, Front-End Developer & UX/UI Designer. Desenvolvo
             aplicações web modernas, acessíveis e escaláveis no ecossistema
             React. Que a boa usabilidade esteja sempre a seu favor.

@@ -1,0 +1,15 @@
+.card_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  text-align: center;
+
+  h3 {
+    color: var(--color-text-red-500);
+  }
+  ul {
+    color: var(--color-black);
+  }
+}

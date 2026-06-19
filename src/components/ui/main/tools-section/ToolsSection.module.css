@@ -1,0 +1,13 @@
+.tools_section {
+  background-color: var(--color-bg-yellow-500);
+}
+
+.section_summary span,
+.section_summary h2 {
+  color: var(--color-text-red-500);
+}
+
+.section_summary p {
+  margin-top: 12px;
+  color: var(--color-black);
+}

@@ -2,15 +2,6 @@
   background-color: var(--color-bg-red-500);
 }
 
-.section_summary {
-  padding-block: 64px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  text-align: center;
-}
 .section_summary span,
 .section_summary h2 {
   color: var(--color-text-yellow-500);

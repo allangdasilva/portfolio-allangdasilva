@@ -26,14 +26,12 @@ const TributeCard = ({ tribute }: Props) => {
       </div>
 
       <div className={styles.text_wrapper}>
-        <ItemHeading className="type_title_md">
+        <ItemHeading>
           {title}
           <span className="type_paragraph_md">, {sub_title}</span>
         </ItemHeading>
-        <Paragraph className="type_paragraph_md">{description}</Paragraph>
-        <ExternalLink className="type_link_md" href={href}>
-          Inspecionar Tributo
-        </ExternalLink>
+        <Paragraph>{description}</Paragraph>
+        <ExternalLink href={href}>Inspecionar Tributo</ExternalLink>
       </div>
     </div>
   );

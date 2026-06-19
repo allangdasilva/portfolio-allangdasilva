@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import SectionHeading from "./SectionHeading";
 import SectionSubHeading from "./SectionSubHeading";
 
@@ -13,13 +14,9 @@ const SectionSummary = ({ sectionCopy, ...props }: Props) => {
   const { title, sub_title, description } = sectionCopy;
 
   return (
-    <div {...props}>
-      <SectionSubHeading className="type_section_sub_heading_md">
-        {sub_title}
-      </SectionSubHeading>
-      <SectionHeading className="type_section_heading_md">
-        {title}
-      </SectionHeading>
+    <div className={clsx("section_summary_center", props.className)}>
+      <SectionSubHeading>{sub_title}</SectionSubHeading>
+      <SectionHeading>{title}</SectionHeading>
       <>{description}</>
     </div>
   );
