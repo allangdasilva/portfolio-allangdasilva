@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 
   text-align: center;
 
@@ -11,5 +11,11 @@
   }
   ul {
     color: var(--color-black);
+  }
+}
+
+@media (min-width: 834px) {
+  .card_wrapper {
+    gap: 8px;
   }
 }

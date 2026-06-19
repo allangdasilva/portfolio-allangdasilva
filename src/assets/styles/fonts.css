@@ -116,6 +116,7 @@
 .type_section_heading_md {
   font-size: var(--font-section-heading-md);
   line-height: var(--font-section-heading-md-line-height);
+  word-break: break-all;
 }
 .type_section_sub_heading_md {
   font-weight: 400;
@@ -141,4 +142,5 @@
   font-weight: 700;
   font-size: var(--font-link-md);
   line-height: var(--font-link-md-line-height);
+  white-space: nowrap;
 }
