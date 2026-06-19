@@ -20,9 +20,11 @@ const TributeCard = ({ tribute }: Props) => {
   return (
     <div className={styles.card_wrapper}>
       <div className={styles.svg_wrapper}>{svg}</div>
+
       <div className={styles.divisor}>
         <div></div>
       </div>
+
       <div className={styles.text_wrapper}>
         <ItemHeading className="type_title_md">
           {title}

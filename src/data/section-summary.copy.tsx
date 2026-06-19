@@ -1,3 +1,4 @@
+import ExternalLink from "../components/ui/common/ExternalLink";
 import Paragraph from "../components/ui/common/Paragraph";
 
 export const sectionCopyTributes = {
@@ -7,10 +8,9 @@ export const sectionCopyTributes = {
     <Paragraph className="type_paragraph_md">
       Aplicações em destaque focadas em React. Para explorar meu fluxo de
       trabalho completo e outros repositórios, acesse a{" "}
-      <a href="#" className="type_link_md">
+      <ExternalLink href="#" className="type_link_md">
         Cornucópia (GitHub)
-      </a>
-      .
+      </ExternalLink>
     </Paragraph>
   ),
 };

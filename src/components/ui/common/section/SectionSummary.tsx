@@ -20,7 +20,7 @@ const SectionSummary = ({ sectionCopy, ...props }: Props) => {
       <SectionHeading className="type_section_heading_md">
         {title}
       </SectionHeading>
-      {description}
+      <>{description}</>
     </div>
   );
 };
