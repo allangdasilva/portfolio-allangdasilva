@@ -9,11 +9,17 @@
   gap: 16px;
 
   padding-block: 112px;
+
+  p {
+    text-align: center;
+    color: var(--color-white);
+  }
 }
 
-.paragraph {
-  text-align: center;
-  color: var(--color-white);
+.svg_wrapper {
+  display: flex;
+  justify-content: end;
+  padding-block: 32px;
 }
 
 @media (min-width: 834px) {

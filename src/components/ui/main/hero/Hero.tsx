@@ -1,5 +1,5 @@
+import ArrowDownSvg from "../../../svgs/ArrowDownSvg";
 import Paragraph from "../../common/Paragraph";
-import HeroArrowDown from "./hero-arrow-down/HeroArrowDown";
 import HeroHeading from "./hero-heading/HeroHeading";
 import styles from "./Hero.module.css";
 
@@ -9,13 +9,17 @@ const Hero = () => {
       <div className={"max_width_container"}>
         <div className={styles.hero_text_wrapper}>
           <HeroHeading />
-          <Paragraph className={styles.paragraph}>
+          <Paragraph>
             Sou Allan, Front-End Developer & UX/UI Designer. Desenvolvo
             aplicações web modernas, acessíveis e escaláveis no ecossistema
             React. Que a boa usabilidade esteja sempre a seu favor.
           </Paragraph>
         </div>
-        <HeroArrowDown />
+        <div className={styles.svg_wrapper}>
+          <button type="button">
+            <ArrowDownSvg />
+          </button>
+        </div>
       </div>
     </header>
   );
