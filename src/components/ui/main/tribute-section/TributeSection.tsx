@@ -5,7 +5,7 @@ import styles from "./TributeSection.module.css";
 
 const TributeSection = () => {
   return (
-    <section className={styles.tribute_section}>
+    <section className={styles.tributes_section}>
       <div className={"max_width_container"}>
         <SectionSummary
           sectionCopy={copyTributesSummary}
