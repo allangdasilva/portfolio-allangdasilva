@@ -22,3 +22,13 @@ export const copyToolsSummary = {
     </Paragraph>
   ),
 };
+
+export const copyTrainingsSummary = {
+  title: "Treinamento",
+  sub_title: "Distrito 2",
+  description: (
+    <Paragraph>
+      O conhecimento técnico é a única vantagem que não pode ser confiscada.
+    </Paragraph>
+  ),
+};

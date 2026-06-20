@@ -1,0 +1,44 @@
+.card_wrapper {
+  width: 100%;
+  max-width: 310px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  color: var(--color-white);
+}
+
+.text_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  text-align: center;
+
+  h3 {
+    color: var(--color-text-yellow-500);
+  }
+}
+
+.certificate_progress_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--color-white);
+
+  svg {
+    max-height: 12px;
+  }
+}
+
+@media (min-width: 834px) {
+  .text_wrapper {
+    gap: 8px;
+  }
+}

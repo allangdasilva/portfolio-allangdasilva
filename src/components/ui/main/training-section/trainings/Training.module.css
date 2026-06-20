@@ -1,0 +1,26 @@
+.trainings_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 48px;
+
+  padding-bottom: 112px;
+}
+
+@media (min-width: 834px) {
+  .trainings_wrapper {
+    grid-template-columns: repeat(12, 1fr);
+
+    & > :is(:nth-child(1), :nth-child(6)) {
+      grid-column: 1 / -1;
+    }
+
+    & > :is(:nth-child(2), :nth-child(4)) {
+      grid-column: 1 / 7;
+    }
+
+    & > :is(:nth-child(3), :nth-child(5)) {
+      grid-column: 7 / 13;
+    }
+  }
+}
