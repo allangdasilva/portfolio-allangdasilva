@@ -10,7 +10,7 @@
 }
 
 .text_wrapper {
-  gap: 8px;
+  gap: 4px;
   text-align: center;
 
   h3 {
@@ -45,6 +45,7 @@
   }
 
   .text_wrapper {
+    gap: 8px;
     grid-column-start: 5;
     grid-column-end: 13;
     align-items: start;
