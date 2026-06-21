@@ -1,12 +1,9 @@
-import Nav from "../../ui/header/nav/Nav";
+import HeaderContent from "../../ui/header/HeaderContent";
 
 const Header = () => {
   return (
     <header>
-      <h1 className="sr_only">
-        Portfólio de Allan Silva, Desenvolvedor Front-End e UX/UI Designer.
-      </h1>
-      <Nav />
+      <HeaderContent />
     </header>
   );
 };
