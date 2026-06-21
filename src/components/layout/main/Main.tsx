@@ -1,3 +1,4 @@
+import ContactSection from "../../ui/main/contact-section/ContactSection";
 import Hero from "../../ui/main/hero/Hero";
 import ToolsSection from "../../ui/main/tools-section/ToolsSection";
 import TrainingSection from "../../ui/main/training-section/TrainingSection";
@@ -10,6 +11,7 @@ const Main = () => {
       <TributeSection />
       <ToolsSection />
       <TrainingSection />
+      <ContactSection />
     </main>
   );
 };

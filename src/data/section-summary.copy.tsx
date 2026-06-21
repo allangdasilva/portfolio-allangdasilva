@@ -32,3 +32,14 @@ export const copyTrainingsSummary = {
     </Paragraph>
   ),
 };
+
+export const copyContactSummary = {
+  title: "Contato",
+  sub_title: "Distrito 1",
+  description: (
+    <Paragraph>
+      Procurando um aliado para o seu próximo projeto? Envie um tordo
+      mensageiro.
+    </Paragraph>
+  ),
+};
