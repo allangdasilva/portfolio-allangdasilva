@@ -1,5 +1,37 @@
 .tools_section {
+  position: relative;
+  padding-bottom: 470px;
   background-color: var(--color-bg-yellow-500);
+}
+
+.background_max_width {
+  max-width: 1280px;
+
+  & > div {
+    height: 100%;
+
+    background-image:
+      url("../../../../assets//images/city-silhouette-1.svg"),
+      url("../../../../assets//images/light-left.svg"),
+      url("../../../../assets//images/light-right.svg"),
+      url("../../../../assets//images/city-silhouette-2.svg");
+    background-repeat: no-repeat;
+    background-size:
+      auto 470px,
+      451px 100%,
+      451px 100%,
+      auto 470px;
+    background-position:
+      bottom left,
+      center left,
+      center right,
+      bottom right;
+  }
+}
+
+.content_wrapper {
+  position: relative;
+  z-index: 1;
 }
 
 .section_summary span,
@@ -10,4 +42,34 @@
 .section_summary p {
   margin-top: 12px;
   color: var(--color-black);
+}
+
+@media (min-width: 1020px) {
+  .background_max_width {
+    max-width: 1280px;
+
+    & > div {
+      height: 100%;
+
+      background-image:
+        url("../../../../assets//images/city-silhouette-1.svg"),
+        url("../../../../assets//images/light-left.svg"),
+        url("../../../../assets//images/light-right.svg"),
+        url("../../../../assets//images/city-silhouette-2.svg"),
+        url("../../../../assets//images/light-center.svg");
+      background-repeat: no-repeat;
+      background-size:
+        auto 470px,
+        440px 100%,
+        440px 100%,
+        auto 470px,
+        451px 100%;
+      background-position:
+        bottom left,
+        center left 60px,
+        center right 60px,
+        bottom right,
+        center center;
+    }
+  }
 }
