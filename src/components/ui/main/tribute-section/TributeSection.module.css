@@ -1,5 +1,31 @@
 .tributes_section {
+  position: relative;
+
   background-color: var(--color-bg-red-500);
+}
+
+.background_max_width {
+  max-width: 1360px;
+
+  & > div {
+    height: 100%;
+
+    background-image:
+      url("../../../../assets/images/mockingjay-logo-red.svg"),
+      url("../../../../assets/images/hands.svg");
+    background-repeat: no-repeat;
+    background-size:
+      clamp(400px, 40%, 440px) auto,
+      clamp(420px, 40%, 472px) auto;
+    background-position:
+      left -40px top -100px,
+      bottom -20px right -40px;
+  }
+}
+
+.content_wrapper {
+  position: relative;
+  z-index: 1;
 }
 
 .section_summary span,
@@ -12,5 +38,15 @@
 
   a {
     color: var(--color-white);
+  }
+}
+
+@media (min-width: 834px) {
+  .background_max_width {
+    & > div {
+      background-position:
+        left 0px top -100px,
+        bottom -20px right 80px;
+    }
   }
 }
