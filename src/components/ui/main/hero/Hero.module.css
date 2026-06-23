@@ -16,17 +16,17 @@
 
   background-image:
     url("../../../../assets//images/mockingjay-logo.svg"),
-    url("../../../../assets/images/bow-and-arrow.svg"),
-    url("../../../../assets/images/arrows.svg");
+    url("../../../../assets/images/arrows.svg"),
+    url("../../../../assets/images/bow-and-arrow.svg");
   background-repeat: no-repeat;
   background-size:
     64px auto,
-    clamp(660px, 80%, 960px) auto,
-    96px auto;
+    96px auto,
+    clamp(660px, 80%, 960px) auto;
   background-position:
     left 16px top 12px,
-    calc(50% - 80px) center,
-    bottom -40px center;
+    bottom -40px center,
+    calc(50% - 80px) center;
 }
 
 .text_wrapper {
@@ -60,7 +60,7 @@
   .background_image {
     background-position:
       top 12px center,
-      calc(50% - 160px) center,
-      bottom -40px center;
+      bottom -40px center,
+      calc(50% - 160px) center;
   }
 }
