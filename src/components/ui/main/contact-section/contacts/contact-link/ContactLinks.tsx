@@ -4,7 +4,7 @@ import styles from "./ContactLinks.module.css";
 
 const ContactLink = () => {
   return (
-    <div className={styles.cards_wrapper}>
+    <div className={styles.links_wrapper}>
       {contactsCopy.map((contact) => (
         <ContactCard key={contact.id} contact={contact} />
       ))}
