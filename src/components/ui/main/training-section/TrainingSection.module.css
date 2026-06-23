@@ -1,5 +1,33 @@
 .trainings_section {
+  position: relative;
   background-color: var(--color-bg-purple-500);
+}
+
+.background_max_width {
+  max-width: 1080px;
+
+  & > div {
+    height: 100%;
+    background-image:
+      url("../../../../assets/images/air-drop-1.svg"),
+      url("../../../../assets/images/air-drop-2.svg"),
+      url("../../../../assets/images/arrow.svg");
+
+    background-repeat: no-repeat;
+    background-size:
+      clamp(108px, 20%, 168px) auto,
+      clamp(168px, 30%, 242px) auto,
+      auto 1360px;
+    background-position:
+      top 20px right 16px,
+      bottom 24px left 2px,
+      bottom -370px center;
+  }
+}
+
+.content_wrapper {
+  position: relative;
+  z-index: 1;
 }
 
 .section_summary span,
@@ -12,5 +40,20 @@
 
   a {
     color: var(--color-white);
+  }
+}
+
+@media (min-width: 834px) {
+  .background_max_width {
+    & > div {
+      background-size:
+        clamp(108px, 20%, 168px) auto,
+        clamp(108px, 30%, 242px) auto,
+        auto 978px;
+      background-position:
+        top 20px right 16px,
+        bottom 24px left 2px,
+        bottom -268px center;
+    }
   }
 }
