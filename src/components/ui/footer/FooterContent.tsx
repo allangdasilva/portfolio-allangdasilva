@@ -3,7 +3,7 @@ import styles from "./FooterContent.module.css";
 const FooterCopyright = () => {
   return (
     <div className={styles.copyright_wrapper}>
-      <div className={"max_width_container"}>
+      <div className={"section_container"}>
         <p className="type_paragraph_sm">
           2026 © Todos direitos reservados - Allan Silva.
         </p>

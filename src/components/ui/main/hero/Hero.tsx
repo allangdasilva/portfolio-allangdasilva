@@ -8,11 +8,11 @@ const Hero = () => {
   return (
     <header className={styles.hero_wrapper}>
       <SectionBackground>
-        <div className={styles.background_max_width}>
-          <div></div>
+        <div className={styles.background_container}>
+          <div className={styles.background_image}></div>
         </div>
       </SectionBackground>
-      <div className={"max_width_container"}>
+      <div className={"section_container"}>
         <div className={styles.text_wrapper}>
           <HeroHeading />
           <Paragraph>

@@ -5,39 +5,35 @@
   background-color: var(--color-bg-dark-900);
 }
 
-.background_max_width {
+.background_container {
   max-width: 1280px;
+}
 
-  & > div {
-    height: 100%;
+.background_image {
+  height: 100%;
 
-    background-image:
-      url("../../../../assets//images/mockingjay-logo.svg"),
-      url("../../../../assets/images/bow-and-arrow.svg"),
-      url("../../../../assets/images/arrows.svg");
-    background-repeat: no-repeat;
-    background-size:
-      64px auto,
-      clamp(700px, 80%, 80%) auto,
-      96px auto;
-    background-position:
-      left 16px top 12px,
-      left -100px center,
-      bottom -40px center;
-  }
+  background-image:
+    url("../../../../assets//images/mockingjay-logo.svg"),
+    url("../../../../assets/images/bow-and-arrow.svg"),
+    url("../../../../assets/images/arrows.svg");
+  background-repeat: no-repeat;
+  background-size:
+    64px auto,
+    clamp(700px, 80%, 80%) auto,
+    96px auto;
+  background-position:
+    left 16px top 12px,
+    left -100px center,
+    bottom -40px center;
 }
 
 .text_wrapper {
-  position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
 
   padding-block: 112px;
-
-  z-index: 1;
 
   p {
     text-align: center;
@@ -59,12 +55,10 @@
   .text_wrapper {
     gap: 32px;
   }
-  .background_max_width {
-    & > div {
-      background-position:
-        top 12px center,
-        left -100px center,
-        bottom -40px center;
-    }
+  .background_image {
+    background-position:
+      top 12px center,
+      left -100px center,
+      bottom -40px center;
   }
 }

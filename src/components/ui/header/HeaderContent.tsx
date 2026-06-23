@@ -7,7 +7,7 @@ const HeaderContent = () => {
       <h1 className="sr_only">
         Portfólio de Allan Silva, Desenvolvedor Front-End e UX/UI Designer.
       </h1>
-      <div className={"max_width_container"}>
+      <div className={"section_container"}>
         <Nav />
       </div>
     </div>
