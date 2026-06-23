@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
   background-size:
     clamp(108px, 20%, 168px) auto,
-    clamp(168px, 30%, 242px) auto,
+    clamp(140px, 30%, 242px) auto,
     auto 1360px;
   background-position:
     top 20px right 16px,
