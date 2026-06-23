@@ -3,6 +3,8 @@
   padding-top: 88px;
 
   background-color: var(--color-bg-dark-900);
+
+  overflow: hidden;
 }
 
 .background_container {
@@ -19,11 +21,11 @@
   background-repeat: no-repeat;
   background-size:
     64px auto,
-    clamp(700px, 80%, 80%) auto,
+    clamp(660px, 80%, 960px) auto,
     96px auto;
   background-position:
     left 16px top 12px,
-    left -100px center,
+    calc(50% - 80px) center,
     bottom -40px center;
 }
 
@@ -58,7 +60,7 @@
   .background_image {
     background-position:
       top 12px center,
-      left -100px center,
+      calc(50% - 160px) center,
       bottom -40px center;
   }
 }
