@@ -1,7 +1,31 @@
 .contact_section {
+  position: relative;
+
   display: flex;
   justify-content: center;
   background-color: var(--color-bg-green-500);
+
+  padding-bottom: 224px;
+}
+
+.background_max_width {
+  max-width: 1180px;
+
+  & > div {
+    position: relative;
+    top: -54px;
+    height: calc(100% + 54px);
+
+    background-image: url("../../../../assets/images/birds.svg");
+    background-repeat: no-repeat;
+    background-size: 376px auto;
+    background-position: calc(50% - -108px) top;
+  }
+}
+
+.content_wrapper {
+  position: relative;
+  z-index: 1;
 }
 
 .section_summary span,
@@ -14,5 +38,22 @@
 
   a {
     color: var(--color-white);
+  }
+}
+
+@media (min-width: 834px) {
+  .contact_section {
+    padding-bottom: 348px;
+  }
+
+  .background_max_width {
+    & > div {
+      top: -68px;
+      height: calc(100% + 68px);
+
+      background-image: url("../../../../assets/images/birds-desktop.svg");
+      background-size: contain;
+      background-position: calc(50% - -196px) bottom;
+    }
   }
 }
