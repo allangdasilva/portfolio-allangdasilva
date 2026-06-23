@@ -3,7 +3,7 @@ import styles from "./Nav.module.css";
 
 const Nav = () => {
   return (
-    <nav className={styles.menu_wrapper}>
+    <nav className={styles.nav_wrapper}>
       <Menu />
     </nav>
   );

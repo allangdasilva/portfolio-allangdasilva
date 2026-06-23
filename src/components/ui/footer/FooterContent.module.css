@@ -1,8 +1,8 @@
-.copyright_wrapper {
+.content_wrapper {
   background-color: var(--color-bg-green-500);
 }
 
-.copyright_wrapper > div {
+.content_wrapper > div {
   display: flex;
   flex-direction: column;
   align-items: center;
