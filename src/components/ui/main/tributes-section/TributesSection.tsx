@@ -2,9 +2,9 @@ import { copyTributesSummary } from "../../../../data/section-summary.copy";
 import SectionBackground from "../../common/section/SectionBackground";
 import SectionSummary from "../../common/section/SectionSummary";
 import Tributes from "./tributes/Tributes";
-import styles from "./TributeSection.module.css";
+import styles from "./TributesSection.module.css";
 
-const TributeSection = () => {
+const TributesSection = () => {
   return (
     <section className={styles.section_wrapper}>
       <SectionBackground>
@@ -23,4 +23,4 @@ const TributeSection = () => {
   );
 };
 
-export default TributeSection;
+export default TributesSection;
