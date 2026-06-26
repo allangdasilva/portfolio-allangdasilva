@@ -20,11 +20,11 @@
     url("../../../../assets/images/bow-and-arrow.svg");
   background-repeat: no-repeat;
   background-size:
-    64px auto,
+    48px auto,
     96px auto,
     clamp(660px, 80%, 960px) auto;
   background-position:
-    left 16px top 12px,
+    top 20px center,
     bottom -40px center,
     calc(50% - 80px) center;
 }
@@ -59,7 +59,7 @@
   }
   .background_image {
     background-position:
-      top 12px center,
+      top 20px center,
       bottom -40px center,
       calc(50% - 160px) center;
   }
