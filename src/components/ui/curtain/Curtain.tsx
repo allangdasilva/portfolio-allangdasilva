@@ -18,7 +18,7 @@ const Curtain = ({ onFinish }: { onFinish: () => void }) => {
       animate={{
         clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
       }}
-      transition={{ duration: 0.9, delay: 1.75, ease: "easeOut" }}
+      transition={{ duration: 0.9, delay: 1.75, ease: "easeInOut" }}
       className={styles.curtain_wrapper}
       onAnimationComplete={onFinish}
       aria-hidden={"true"}
