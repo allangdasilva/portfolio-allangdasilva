@@ -1,0 +1,17 @@
+.words_wrapper {
+  overflow: hidden;
+}
+
+.words {
+  color: transparent;
+
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-text-yellow-500),
+    var(--color-text-yellow-400),
+    var(--color-text-yellow-500)
+  );
+  /* Recorta o fundo para ficar exatamente no formato do texto */
+  -webkit-background-clip: text;
+  background-clip: text;
+}

@@ -21,7 +21,7 @@ function App() {
       <Main />
       <Footer />
       {/* o loader é removido do DOM assim que a animação termina */}
-      {isLoading && <Curtain onFinish={() => setIsLoading(false)} />}
+      {/* {isLoading && <Curtain onFinish={() => setIsLoading(false)} />} */}
     </>
   );
 }
