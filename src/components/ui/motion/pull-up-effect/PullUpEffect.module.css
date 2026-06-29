@@ -1,0 +1,12 @@
+.words_wrapper {
+  display: inline-block;
+  vertical-align: text-top;
+
+  line-height: inherit;
+  font-size: inherit;
+
+  overflow: hidden;
+}
+.word {
+  display: inline-block;
+}

@@ -4,8 +4,8 @@ import SectionSubHeading from "./SectionSubHeading";
 
 type Props = React.HTMLAttributes<HTMLDivElement> & {
   sectionCopy: {
-    title: string;
-    sub_title: string;
+    title: React.JSX.Element;
+    sub_title: React.JSX.Element;
     description: React.JSX.Element;
   };
 };

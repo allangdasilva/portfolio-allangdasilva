@@ -8,9 +8,10 @@ import {
 
 type Props = HTMLMotionProps<"span"> & {
   text: string;
+  baseDelay?: number;
 };
 
-const TypingEffect = ({ text }: Props) => {
+const TypingEffect = ({ text, baseDelay }: Props) => {
   const splittedText = text.split("");
 
   const letterVariants: Variants = {
@@ -22,7 +23,7 @@ const TypingEffect = ({ text }: Props) => {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 0.6 + i * 0.01,
+        delay: baseDelay ? baseDelay + i * 0.01 : i * 0.01,
         ease: "easeInOut",
       },
     }),

@@ -21,6 +21,7 @@ const Hero = () => {
               text={
                 "Sou Allan, Front-End Developer & UX/UI Designer. Desenvolvo aplicações web modernas, acessíveis e escaláveis no ecossistema React. Que a boa usabilidade esteja sempre a seu favor."
               }
+              baseDelay={0.6}
             />
           </Paragraph>
         </div>

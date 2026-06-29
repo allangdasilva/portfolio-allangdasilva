@@ -37,7 +37,10 @@
 
 .section_summary p {
   margin-top: 12px;
-  color: var(--color-black);
+
+  span {
+    color: var(--color-black);
+  }
 }
 
 @media (min-width: 1020px) {

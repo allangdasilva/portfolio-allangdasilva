@@ -1,45 +1,50 @@
 import ExternalLink from "../components/ui/common/ExternalLink";
 import Paragraph from "../components/ui/common/Paragraph";
+import PullUpEffect from "../components/ui/motion/pull-up-effect/PullUpEffect";
+import TypingEffect from "../components/ui/motion/TypingEffect";
 
 export const copyTributesSummary = {
-  title: "Tributos",
-  sub_title: "Distrito 3",
+  title: <PullUpEffect text="Tributos" />,
+  sub_title: <PullUpEffect text="Distrito 3" />,
   description: (
     <Paragraph>
-      Aplicações em destaque focadas em React. Para explorar meu fluxo de
-      trabalho completo e outros repositórios, acesse a{" "}
-      <ExternalLink href="#">Cornucópia (GitHub)</ExternalLink>
+      <TypingEffect text="Aplicações em destaque focadas em React. Para explorar meu fluxo de trabalho completo e outros repositórios, acesse a " />
+      <ExternalLink href="#">
+        <TypingEffect text="• Cornucópia (GitHub) •" baseDelay={1.18} />
+      </ExternalLink>
     </Paragraph>
   ),
 };
 
 export const copyToolsSummary = {
-  title: "Ferramentas",
-  sub_title: "Distrito 4",
+  title: <PullUpEffect text="Ferramentas" />,
+  sub_title: <PullUpEffect text="Distrito 4" />,
   description: (
     <Paragraph>
-      Projetando interfaces para agradar até o público mais exigente da Capital.
+      <TypingEffect text="Projetando interfaces para agradar até o público mais exigente da Capital." />
     </Paragraph>
   ),
 };
 
 export const copyTrainingsSummary = {
-  title: "Treinamento",
-  sub_title: "Distrito 2",
+  title: <PullUpEffect text="Treinamento" />,
+  sub_title: <PullUpEffect text="Distrito 2" />,
   description: (
     <Paragraph>
-      O conhecimento técnico é a única vantagem que não pode ser confiscada.
+      <TypingEffect text="O conhecimento técnico é a única vantagem que não pode ser confiscada." />
     </Paragraph>
   ),
 };
 
 export const copyContactSummary = {
-  title: "Contato",
-  sub_title: "Distrito 1",
+  title: <PullUpEffect text="Contato" />,
+  sub_title: <PullUpEffect text="Distrito 1" />,
   description: (
     <Paragraph>
-      Procurando um aliado para o seu próximo projeto? Envie um tordo
-      mensageiro.
+      <TypingEffect
+        text="Procurando um aliado para o seu próximo projeto? Envie um tordo
+      mensageiro."
+      />
     </Paragraph>
   ),
 };

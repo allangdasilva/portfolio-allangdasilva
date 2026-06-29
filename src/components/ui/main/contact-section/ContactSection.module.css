@@ -29,9 +29,8 @@
 }
 .section_summary p {
   margin-top: 12px;
-  color: var(--color-white);
 
-  a {
+  span {
     color: var(--color-white);
   }
 }

@@ -5,13 +5,14 @@ import {
   type Variants,
 } from "motion/react";
 import { useRef } from "react";
+import styles from "./PullUpEffect.module.css";
 
 type Props = HTMLMotionProps<"span"> & {
   text: string;
 };
 
 const PullUpEffect = ({ text }: Props) => {
-  const textVariants: Variants = {
+  const wordVariants: Variants = {
     initial: {
       y: "100%",
       opacity: 0.2,
@@ -30,18 +31,13 @@ const PullUpEffect = ({ text }: Props) => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <motion.span
-      style={{
-        display: "inline-block",
-        verticalAlign: "middle",
-        overflow: "hidden",
-      }}
-    >
+    <motion.span className={styles.words_wrapper}>
       <motion.span
         ref={ref}
-        variants={textVariants}
+        variants={wordVariants}
         initial={"initial"}
         animate={isInView ? "animate" : ""}
+        className={styles.word}
         style={{ display: "inline-block" }}
       >
         {text}

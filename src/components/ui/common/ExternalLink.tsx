@@ -12,7 +12,7 @@ const ExternalLink = ({ children, ...props }: Props) => {
       rel="noopener noreferrer"
       {...props}
     >
-      &#8226; {children} &#8226;
+      {children}
     </a>
   );
 };
