@@ -1,6 +1,7 @@
 import ArrowDownSvg from "../../../svgs/ArrowDownSvg";
 import Paragraph from "../../common/Paragraph";
 import SectionBackground from "../../common/section/SectionBackground";
+import TypingEffect from "../../motion/TypingEffect";
 import HeroHeading from "./hero-heading/HeroHeading";
 import styles from "./Hero.module.css";
 
@@ -16,9 +17,11 @@ const Hero = () => {
         <div className={styles.text_wrapper}>
           <HeroHeading />
           <Paragraph>
-            Sou Allan, Front-End Developer & UX/UI Designer. Desenvolvo
-            aplicações web modernas, acessíveis e escaláveis no ecossistema
-            React. Que a boa usabilidade esteja sempre a seu favor.
+            <TypingEffect
+              text={
+                "Sou Allan, Front-End Developer & UX/UI Designer. Desenvolvo aplicações web modernas, acessíveis e escaláveis no ecossistema React. Que a boa usabilidade esteja sempre a seu favor."
+              }
+            />
           </Paragraph>
         </div>
         <div className={styles.button_wrapper}>
