@@ -1,7 +1,9 @@
+import { motion, useInView, type Variants } from "motion/react";
 import ExternalLink from "../../../../common/ExternalLink";
 import ItemHeading from "../../../../common/ItemHeading";
 import Paragraph from "../../../../common/Paragraph";
 import styles from "./TributeCard.module.css";
+import { useRef } from "react";
 
 type Props = React.HTMLAttributes<HTMLDivElement> & {
   tribute: {
@@ -17,8 +19,29 @@ type Props = React.HTMLAttributes<HTMLDivElement> & {
 const TributeCard = ({ tribute }: Props) => {
   const { svg, title, sub_title, description, href } = tribute;
 
+  const cardVariants: Variants = {
+    initial: {
+      y: 20,
+      opacity: 0.2,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.4, ease: "easeOut" },
+    },
+  };
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className={styles.card_wrapper}>
+    <motion.div
+      ref={ref}
+      variants={cardVariants}
+      initial={"initial"}
+      animate={isInView ? "animate" : ""}
+      className={styles.card_wrapper}
+    >
       <div className={styles.svg_wrapper}>{svg}</div>
 
       <div className={styles.divisor}>
@@ -33,7 +56,7 @@ const TributeCard = ({ tribute }: Props) => {
         <Paragraph>{description}</Paragraph>
         <ExternalLink href={href}>Inspecionar Tributo</ExternalLink>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
