@@ -9,7 +9,7 @@ export const copyTributesSummary = {
   description: (
     <Paragraph>
       <TypingEffect text="Aplicações em destaque focadas em React. Para explorar meu fluxo de trabalho completo e outros repositórios, acesse a " />
-      <ExternalLink href="#">
+      <ExternalLink href="https://github.com/allangdasilva">
         <TypingEffect text="• Cornucópia (GitHub) •" baseDelay={1.18} />
       </ExternalLink>
     </Paragraph>
