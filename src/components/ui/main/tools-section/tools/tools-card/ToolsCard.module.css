@@ -80,7 +80,7 @@
 
     .dashed {
       position: absolute;
-      top: 16px;
+      top: 12px;
       height: calc(100% + 16px);
     }
     .dashed_none {
