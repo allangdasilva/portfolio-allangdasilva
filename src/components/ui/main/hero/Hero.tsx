@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import ArrowDownSvg from "../../../svgs/ArrowDownSvg";
 import Paragraph from "../../common/Paragraph";
 import SectionBackground from "../../common/section/SectionBackground";
@@ -13,8 +14,8 @@ const Hero = () => {
           <div className={styles.background_image}></div>
         </div>
       </SectionBackground>
-      <div className={"section_container"}>
-        <div className={styles.text_wrapper}>
+      <div className={clsx("section_container", styles.section_container)}>
+        <div className={styles.content_wrapper}>
           <HeroHeading />
           <Paragraph>
             <TypingEffect
@@ -24,8 +25,7 @@ const Hero = () => {
               baseDelay={0.6}
             />
           </Paragraph>
-        </div>
-        <div className={styles.button_wrapper}>
+
           <button type="button">
             <ArrowDownSvg />
           </button>
