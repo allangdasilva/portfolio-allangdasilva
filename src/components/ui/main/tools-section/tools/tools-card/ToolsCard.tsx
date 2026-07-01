@@ -29,6 +29,7 @@ const ToolsCard = ({ card, position, isLast }: Props) => {
       },
     },
   };
+
   const detailVariants: Variants = {
     initial: {
       clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
