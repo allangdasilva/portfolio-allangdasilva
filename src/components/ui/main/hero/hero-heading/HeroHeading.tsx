@@ -2,6 +2,7 @@ import { motion, useInView, type Variants } from "motion/react";
 import { useRef } from "react";
 import PullUpEffect from "../../../motion/pull-up-effect/PullUpEffect";
 import styles from "./HeroHeading.module.css";
+import clsx from "clsx";
 
 const HeroHeading = () => {
   const ref = useRef(null);
@@ -30,19 +31,28 @@ const HeroHeading = () => {
       animate={isInView ? "animate" : ""}
       className={styles.heading_wrapper}
     >
-      <motion.div variants={blockVariants}>
-        <PullUpEffect text="Dev" className="type_hero_heading_sm" />
+      <motion.div
+        variants={blockVariants}
+        className={clsx(styles.text_sm_wrapper, "type_hero_heading_sm")}
+      >
+        <PullUpEffect text="Dev" />
       </motion.div>
 
-      <motion.div variants={blockVariants} className={styles.text_xl_wrapper}>
-        <PullUpEffect text="Front" className={"type_hero_heading_xl"} />
-        <PullUpEffect text="End" className={"type_hero_heading_xl"} />
+      <motion.div
+        variants={blockVariants}
+        className={clsx(styles.text_xl_wrapper, "type_hero_heading_xl")}
+      >
+        <PullUpEffect text="Front" />
+        <PullUpEffect text="End" />
       </motion.div>
 
-      <motion.div variants={blockVariants} className={styles.text_md_wrapper}>
-        <PullUpEffect text="&" className={"type_hero_heading_md"} />
-        <PullUpEffect text="UX/UI" className={"type_hero_heading_md"} />
-        <PullUpEffect text="Designer" className={"type_hero_heading_md"} />
+      <motion.div
+        variants={blockVariants}
+        className={clsx(styles.text_md_wrapper, "type_hero_heading_md")}
+      >
+        <PullUpEffect text="&" />
+        <PullUpEffect text="UX/UI" />
+        <PullUpEffect text="Designer" />
       </motion.div>
     </motion.h2>
   );

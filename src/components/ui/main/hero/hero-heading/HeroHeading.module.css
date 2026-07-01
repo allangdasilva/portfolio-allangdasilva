@@ -2,6 +2,9 @@
   text-align: center;
 
   span {
+    line-height: inherit;
+    font-size: inherit;
+
     color: transparent;
 
     background-image: linear-gradient(
@@ -16,7 +19,8 @@
   }
 }
 .text_xl_wrapper,
-.text_md_wrapper {
+.text_md_wrapper,
+.text_sm_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;

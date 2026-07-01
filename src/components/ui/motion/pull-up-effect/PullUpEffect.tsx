@@ -16,15 +16,12 @@ const PullUpEffect = ({ text, ...props }: Props) => {
   const wordVariants: Variants = {
     initial: {
       y: "100%",
-      opacity: 0.2,
+      opacity: 0,
     },
     animate: {
       y: "0%",
       opacity: 1,
-      transition: {
-        duration: 0.45,
-        ease: "easeOut",
-      },
+      transition: { duration: 0.4, ease: "easeOut" },
     },
   };
 

@@ -1,30 +1,12 @@
-import { motion, useInView } from "motion/react";
+import { motion } from "motion/react";
+import MotionWrapper from "../../../motion/MotionWrapper";
 import ContactLink from "./contact-link/ContactLinks";
 import ContactSocial from "./contact-social/ContactSocial";
 import styles from "./Contacts.module.css";
-import { useRef } from "react";
 
 const Contacts = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  const wrapperVariants = {
-    initial: {},
-    animate: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
   return (
-    <motion.div
-      ref={ref}
-      variants={wrapperVariants}
-      initial={"initial"}
-      animate={isInView ? "animate" : ""}
-      className={styles.contacts_wrapper}
-    >
+    <MotionWrapper staggerValue={0.2} className={styles.contacts_wrapper}>
       {/* Links */}
       <motion.div>
         <ContactLink />
@@ -33,7 +15,7 @@ const Contacts = () => {
       <motion.div>
         <ContactSocial />
       </motion.div>
-    </motion.div>
+    </MotionWrapper>
   );
 };
 

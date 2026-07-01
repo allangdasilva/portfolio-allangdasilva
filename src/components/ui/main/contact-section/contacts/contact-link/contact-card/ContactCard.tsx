@@ -12,7 +12,7 @@ type Props = HTMLMotionProps<"div"> & {
   };
 };
 
-const ContactCard = ({ contact }: Props) => {
+const ContactCard = ({ contact, ...props }: Props) => {
   const { title, desription, href } = contact;
 
   const cardVariants: Variants = {
@@ -23,14 +23,12 @@ const ContactCard = ({ contact }: Props) => {
     animate: {
       y: 0,
       opacity: 1,
-      transition: {
-        duration: 0.4,
-      },
+      transition: { duration: 0.4, ease: "easeOut" },
     },
   };
 
   return (
-    <motion.div className={styles.card_wrapper}>
+    <motion.div className={styles.card_wrapper} {...props}>
       {/* Title */}
       <motion.div variants={cardVariants}>
         <ItemHeading>{title}</ItemHeading>

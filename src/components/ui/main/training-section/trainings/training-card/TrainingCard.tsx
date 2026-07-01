@@ -13,7 +13,7 @@ type Props = HTMLMotionProps<"div"> & {
   };
 };
 
-const TrainingCard = ({ training }: Props) => {
+const TrainingCard = ({ training, ...props }: Props) => {
   const { title, description, progress } = training;
 
   const cardVariants: Variants = {
@@ -24,14 +24,16 @@ const TrainingCard = ({ training }: Props) => {
     animate: {
       y: 0,
       opacity: 1,
-      transition: {
-        duration: 0.8,
-      },
+      transition: { duration: 0.4, ease: "easeOut" },
     },
   };
 
   return (
-    <motion.div variants={cardVariants} className={styles.card_wrapper}>
+    <motion.div
+      variants={cardVariants}
+      className={styles.card_wrapper}
+      {...props}
+    >
       {/* Text */}
       <motion.div className={styles.text_wrapper}>
         <ItemHeading>{title}</ItemHeading>

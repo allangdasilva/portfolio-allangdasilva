@@ -11,16 +11,14 @@ type Props = HTMLMotionProps<"span"> & {
   baseDelay?: number;
 };
 
-const TypingEffect = ({ text, baseDelay }: Props) => {
+const TypingEffect = ({ text, baseDelay, ...props }: Props) => {
   const splittedText = text.split("");
 
   const letterVariants: Variants = {
     initial: {
-      y: -10,
       opacity: 0,
     },
     animate: (i: number) => ({
-      y: 0,
       opacity: 1,
       transition: {
         delay: baseDelay ? baseDelay + i * 0.01 : i * 0.01,
@@ -33,7 +31,7 @@ const TypingEffect = ({ text, baseDelay }: Props) => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <motion.span>
+    <motion.span {...props}>
       {splittedText.map((letter, i) => (
         <motion.span
           key={i}

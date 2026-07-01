@@ -15,7 +15,7 @@ type Props = HTMLMotionProps<"div"> & {
   isLast: boolean;
 };
 
-const ToolsCard = ({ card, position, isLast }: Props) => {
+const ToolsCard = ({ card, position, isLast, ...props }: Props) => {
   const { title, tools } = card;
 
   const cardVariants: Variants = {
@@ -24,9 +24,7 @@ const ToolsCard = ({ card, position, isLast }: Props) => {
     },
     animate: {
       opacity: 1,
-      transition: {
-        duration: 0.4,
-      },
+      transition: { duration: 0.1, ease: "easeOut" },
     },
   };
 
@@ -35,10 +33,8 @@ const ToolsCard = ({ card, position, isLast }: Props) => {
       clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
     },
     animate: {
-      clipPath: "polygon(0 0, 100% 0, 100% 120%, 0 120%)",
-      transition: {
-        duration: 0.8,
-      },
+      clipPath: "polygon(0 0, 100% 0, 100% 130%, 0 130%)",
+      transition: { duration: 0.6, ease: "easeOut" },
     },
   };
 
@@ -49,6 +45,7 @@ const ToolsCard = ({ card, position, isLast }: Props) => {
         position === "left" && styles.card_wrapper_left,
         position === "right" && styles.card_wrapper_right,
       )}
+      {...props}
     >
       {/* Detail */}
       <motion.div

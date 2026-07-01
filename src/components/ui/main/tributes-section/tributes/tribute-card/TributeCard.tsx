@@ -1,10 +1,10 @@
-import { motion, type Variants } from "motion/react";
+import { motion, type HTMLMotionProps, type Variants } from "motion/react";
 import ExternalLink from "../../../../common/ExternalLink";
 import ItemHeading from "../../../../common/ItemHeading";
 import Paragraph from "../../../../common/Paragraph";
 import styles from "./TributeCard.module.css";
 
-type Props = React.HTMLAttributes<HTMLDivElement> & {
+type Props = HTMLMotionProps<"div"> & {
   tribute: {
     id: number;
     svg: React.JSX.Element;
@@ -15,13 +15,13 @@ type Props = React.HTMLAttributes<HTMLDivElement> & {
   };
 };
 
-const TributeCard = ({ tribute }: Props) => {
+const TributeCard = ({ tribute, ...props }: Props) => {
   const { svg, title, sub_title, description, href } = tribute;
 
   const cardVariants: Variants = {
     initial: {
-      y: 20,
-      opacity: 0.2,
+      y: 40,
+      opacity: 0,
     },
     animate: {
       y: 0,
@@ -31,7 +31,11 @@ const TributeCard = ({ tribute }: Props) => {
   };
 
   return (
-    <motion.div variants={cardVariants} className={styles.card_wrapper}>
+    <motion.div
+      variants={cardVariants}
+      className={styles.card_wrapper}
+      {...props}
+    >
       {/* SVG */}
       <motion.div className={styles.svg_wrapper}>{svg}</motion.div>
       {/* Divisor */}

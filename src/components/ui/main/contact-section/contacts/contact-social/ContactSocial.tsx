@@ -1,10 +1,12 @@
-import { motion, type Variants } from "motion/react";
+import { motion, type HTMLMotionProps, type Variants } from "motion/react";
 import { contactsSocialCopy } from "../../../../../../data/contacts.copy";
 import List from "../../../../common/list/List";
 import ListItem from "../../../../common/list/ListItem";
 import styles from "./ContactSocial.module.css";
 
-const ContactSocial = () => {
+type Props = HTMLMotionProps<"div">;
+
+const ContactSocial = ({ ...props }: Props) => {
   const cardVariants: Variants = {
     initial: {
       y: 20,
@@ -13,14 +15,12 @@ const ContactSocial = () => {
     animate: {
       y: 0,
       opacity: 1,
-      transition: {
-        duration: 0.4,
-      },
+      transition: { duration: 0.4, ease: "easeOut" },
     },
   };
 
   return (
-    <motion.div className={styles.social_wrapper}>
+    <motion.div className={styles.social_wrapper} {...props}>
       <List>
         {contactsSocialCopy.map((social) => (
           <ListItem key={social.id}>
