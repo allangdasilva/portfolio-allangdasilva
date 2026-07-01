@@ -1,14 +1,14 @@
+import { motion, useInView, type Variants } from "motion/react";
 import { useRef } from "react";
-import { motion, useInView } from "motion/react";
+import PullUpEffect from "../../../motion/pull-up-effect/PullUpEffect";
 import styles from "./HeroHeading.module.css";
-import HeadingWordsPullUp from "./heading-words-pull-up/HeadingWordsPullUp";
 
 const HeroHeading = () => {
   const ref = useRef(null);
 
   const isInView = useInView(ref, { once: true });
 
-  const wrapperVariants = {
+  const wrapperVariants: Variants = {
     initial: {},
     animate: {
       transition: {
@@ -17,7 +17,7 @@ const HeroHeading = () => {
     },
   };
 
-  const blockVariants = {
+  const blockVariants: Variants = {
     initial: {},
     animate: {},
   };
@@ -31,21 +31,18 @@ const HeroHeading = () => {
       className={styles.heading_wrapper}
     >
       <motion.div variants={blockVariants}>
-        <HeadingWordsPullUp text="Dev" className="type_hero_heading_sm" />
+        <PullUpEffect text="Dev" className="type_hero_heading_sm" />
       </motion.div>
 
       <motion.div variants={blockVariants} className={styles.text_xl_wrapper}>
-        <HeadingWordsPullUp text="Front" className={"type_hero_heading_xl"} />
-        <HeadingWordsPullUp text="End" className={"type_hero_heading_xl"} />
+        <PullUpEffect text="Front" className={"type_hero_heading_xl"} />
+        <PullUpEffect text="End" className={"type_hero_heading_xl"} />
       </motion.div>
 
       <motion.div variants={blockVariants} className={styles.text_md_wrapper}>
-        <HeadingWordsPullUp text="&" className={"type_hero_heading_md"} />
-        <HeadingWordsPullUp text="UX/UI" className={"type_hero_heading_md"} />
-        <HeadingWordsPullUp
-          text="Designer"
-          className={"type_hero_heading_md"}
-        />
+        <PullUpEffect text="&" className={"type_hero_heading_md"} />
+        <PullUpEffect text="UX/UI" className={"type_hero_heading_md"} />
+        <PullUpEffect text="Designer" className={"type_hero_heading_md"} />
       </motion.div>
     </motion.h2>
   );

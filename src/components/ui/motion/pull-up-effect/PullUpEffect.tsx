@@ -6,12 +6,13 @@ import {
 } from "motion/react";
 import { useRef } from "react";
 import styles from "./PullUpEffect.module.css";
+import clsx from "clsx";
 
 type Props = HTMLMotionProps<"span"> & {
   text: string;
 };
 
-const PullUpEffect = ({ text }: Props) => {
+const PullUpEffect = ({ text, ...props }: Props) => {
   const wordVariants: Variants = {
     initial: {
       y: "100%",
@@ -37,7 +38,7 @@ const PullUpEffect = ({ text }: Props) => {
         variants={wordVariants}
         initial={"initial"}
         animate={isInView ? "animate" : ""}
-        className={styles.word}
+        className={clsx(styles.word, props.className)}
         style={{ display: "inline-block" }}
       >
         {text}

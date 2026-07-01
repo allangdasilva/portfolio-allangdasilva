@@ -1,5 +1,19 @@
 .heading_wrapper {
   text-align: center;
+
+  span {
+    color: transparent;
+
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-text-yellow-500),
+      var(--color-text-yellow-400),
+      var(--color-text-yellow-500)
+    );
+    /* Recorta o fundo para ficar exatamente no formato do texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
 .text_xl_wrapper,
 .text_md_wrapper {
