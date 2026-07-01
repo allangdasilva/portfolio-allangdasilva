@@ -1,9 +1,8 @@
-import { motion, useInView, type Variants } from "motion/react";
+import { motion, type Variants } from "motion/react";
 import ExternalLink from "../../../../common/ExternalLink";
 import ItemHeading from "../../../../common/ItemHeading";
 import Paragraph from "../../../../common/Paragraph";
 import styles from "./TributeCard.module.css";
-import { useRef } from "react";
 
 type Props = React.HTMLAttributes<HTMLDivElement> & {
   tribute: {
@@ -31,31 +30,23 @@ const TributeCard = ({ tribute }: Props) => {
     },
   };
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   return (
-    <motion.div
-      ref={ref}
-      variants={cardVariants}
-      initial={"initial"}
-      animate={isInView ? "animate" : ""}
-      className={styles.card_wrapper}
-    >
-      <div className={styles.svg_wrapper}>{svg}</div>
-
-      <div className={styles.divisor}>
-        <div></div>
-      </div>
-
-      <div className={styles.text_wrapper}>
+    <motion.div variants={cardVariants} className={styles.card_wrapper}>
+      {/* SVG */}
+      <motion.div className={styles.svg_wrapper}>{svg}</motion.div>
+      {/* Divisor */}
+      <motion.div className={styles.divisor}>
+        <motion.div></motion.div>
+      </motion.div>
+      {/* Text */}
+      <motion.div className={styles.text_wrapper}>
         <ItemHeading>
           {title}
-          <span className="type_paragraph_md">, {sub_title}</span>
+          <motion.span className="type_paragraph_md">, {sub_title}</motion.span>
         </ItemHeading>
         <Paragraph>{description}</Paragraph>
         <ExternalLink href={href}>Inspecionar Tributo</ExternalLink>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
