@@ -49,7 +49,7 @@ const TributeCard = ({ tribute, ...props }: Props) => {
           <motion.span className="type_paragraph_md">, {sub_title}</motion.span>
         </ItemHeading>
         <Paragraph>{description}</Paragraph>
-        <ExternalLink href={href}>Inspecionar Tributo</ExternalLink>
+        <ExternalLink href={href}>• Inspecionar Tributo •</ExternalLink>
       </motion.div>
     </motion.div>
   );

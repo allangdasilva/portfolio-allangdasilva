@@ -36,7 +36,7 @@ const ContactCard = ({ contact, ...props }: Props) => {
       {/* Link */}
       <motion.div variants={cardVariants}>
         <ExternalLink href={href}>
-          <motion.span>{desription}</motion.span>
+          <motion.span>• {desription} •</motion.span>
         </ExternalLink>
       </motion.div>
     </motion.div>
