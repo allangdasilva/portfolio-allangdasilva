@@ -1,8 +1,7 @@
 import { motion, useInView, type Variants } from "motion/react";
 import { useRef } from "react";
-import PullUpEffect from "../../../motion/pull-up-effect/PullUpEffect";
 import styles from "./HeroHeading.module.css";
-import clsx from "clsx";
+import TypingEffectBlur from "../../../motion/typing-effect-blur/TypingEffectBlur";
 
 const HeroHeading = () => {
   const ref = useRef(null);
@@ -10,17 +9,15 @@ const HeroHeading = () => {
   const isInView = useInView(ref, { once: true });
 
   const wrapperVariants: Variants = {
-    initial: {},
+    initial: {
+      opacity: 0,
+    },
     animate: {
+      opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.06,
       },
     },
-  };
-
-  const blockVariants: Variants = {
-    initial: {},
-    animate: {},
   };
 
   return (
@@ -31,28 +28,17 @@ const HeroHeading = () => {
       animate={isInView ? "animate" : ""}
       className={styles.heading_wrapper}
     >
-      <motion.div
-        variants={blockVariants}
-        className={clsx(styles.text_sm_wrapper, "type_hero_heading_sm")}
-      >
-        <PullUpEffect text="Dev" />
+      <motion.div className="type_hero_heading_sm">
+        <TypingEffectBlur text="Dev" />
       </motion.div>
 
-      <motion.div
-        variants={blockVariants}
-        className={clsx(styles.text_xl_wrapper, "type_hero_heading_xl")}
-      >
-        <PullUpEffect text="Front" />
-        <PullUpEffect text="End" />
+      <motion.div className={"type_hero_heading_xl"}>
+        <TypingEffectBlur text="Front" /> <TypingEffectBlur text="End" />
       </motion.div>
 
-      <motion.div
-        variants={blockVariants}
-        className={clsx(styles.text_md_wrapper, "type_hero_heading_md")}
-      >
-        <PullUpEffect text="&" />
-        <PullUpEffect text="UX/UI" />
-        <PullUpEffect text="Designer" />
+      <motion.div className={"type_hero_heading_md"}>
+        <TypingEffectBlur text="&" /> <TypingEffectBlur text="UX/UI" />{" "}
+        <TypingEffectBlur text="Designer" />
       </motion.div>
     </motion.h2>
   );

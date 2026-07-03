@@ -29,10 +29,7 @@
 }
 .section_summary p {
   margin-top: 12px;
-
-  span {
-    color: var(--color-white);
-  }
+  color: var(--color-white);
 }
 
 @media (min-width: 834px) {

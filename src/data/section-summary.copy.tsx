@@ -1,50 +1,34 @@
 import ExternalLink from "../components/ui/common/ExternalLink";
-import Paragraph from "../components/ui/common/Paragraph";
-import PullUpEffect from "../components/ui/motion/pull-up-effect/PullUpEffect";
-import TypingEffect from "../components/ui/motion/TypingEffect";
 
 export const copyTributesSummary = {
-  title: <PullUpEffect text="Tributos" />,
-  sub_title: <PullUpEffect text="Distrito 3" />,
-  description: (
-    <Paragraph>
-      <TypingEffect text="Aplicações em destaque focadas em React. Para explorar meu fluxo de trabalho completo e outros repositórios, acesse a " />
-      <ExternalLink href="https://github.com/allangdasilva">
-        <TypingEffect text="• Cornucópia (GitHub) •" baseDelay={1.18} />
-      </ExternalLink>
-    </Paragraph>
+  title: "Tributos",
+  sub_title: "Distrito 3",
+  description:
+    "Aplicações em destaque focadas em React. Para explorar meu fluxo de trabalho completo e outros repositórios, acesse a",
+  link: (
+    <ExternalLink href="https://github.com/allangdasilva">
+      • Cornucópia (GitHub) •
+    </ExternalLink>
   ),
 };
 
 export const copyToolsSummary = {
-  title: <PullUpEffect text="Ferramentas" />,
-  sub_title: <PullUpEffect text="Distrito 4" />,
-  description: (
-    <Paragraph>
-      <TypingEffect text="Projetando interfaces para agradar até o público mais exigente da Capital." />
-    </Paragraph>
-  ),
+  title: "Ferramentas",
+  sub_title: "Distrito 4",
+  description:
+    "Projetando interfaces para agradar até o público mais exigente da Capital.",
 };
 
 export const copyTrainingsSummary = {
-  title: <PullUpEffect text="Treinamento" />,
-  sub_title: <PullUpEffect text="Distrito 2" />,
-  description: (
-    <Paragraph>
-      <TypingEffect text="O conhecimento técnico é a única vantagem que não pode ser confiscada." />
-    </Paragraph>
-  ),
+  title: "Treinamento",
+  sub_title: "Distrito 2",
+  description:
+    "O conhecimento técnico é a única vantagem que não pode ser confiscada.",
 };
 
 export const copyContactSummary = {
-  title: <PullUpEffect text="Contato" />,
-  sub_title: <PullUpEffect text="Distrito 1" />,
-  description: (
-    <Paragraph>
-      <TypingEffect
-        text="Procurando um aliado para o seu próximo projeto? Envie um tordo
-      mensageiro."
-      />
-    </Paragraph>
-  ),
+  title: "Contato",
+  sub_title: "Distrito 1",
+  description:
+    "Procurando um aliado para o seu próximo projeto? Envie um tordo mensageiro.",
 };

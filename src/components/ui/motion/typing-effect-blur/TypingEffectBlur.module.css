@@ -1,0 +1,12 @@
+.word {
+  line-height: inherit;
+  font-size: inherit;
+
+  white-space: nowrap;
+}
+.letter {
+  display: inline-block;
+
+  line-height: inherit;
+  font-size: inherit;
+}

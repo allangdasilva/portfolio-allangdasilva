@@ -21,19 +21,10 @@
 .background_image {
   height: 100%;
 
-  background-image:
-    url("../../../../assets//images/mockingjay-logo.svg"),
-    url("../../../../assets/images/arrows.svg"),
-    url("../../../../assets/images/bow-and-arrow.svg");
+  background-image: url("../../../../assets/images/laurels.svg");
   background-repeat: no-repeat;
-  background-size:
-    48px auto,
-    96px auto,
-    clamp(660px, 80%, 960px) auto;
-  background-position:
-    top 20px center,
-    bottom -40px center,
-    calc(50% - 80px) center;
+  background-size: clamp(340px, 60%, 580px) auto;
+  background-position: center calc(50% + 50px);
 }
 
 .section_container {
@@ -53,7 +44,7 @@
   gap: 16px;
   text-align: center;
 
-  padding-block: 124px 212px;
+  padding-block: 56px 144px;
 
   p {
     color: var(--color-white);
@@ -71,9 +62,6 @@
     gap: 32px;
   }
   .background_image {
-    background-position:
-      top 20px center,
-      bottom -40px center,
-      calc(50% - 160px) center;
+    background-position: center calc(50% + 80px);
   }
 }

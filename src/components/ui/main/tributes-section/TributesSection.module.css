@@ -31,7 +31,7 @@
   margin-top: 12px;
   color: var(--color-white);
 
-  span {
+  a {
     color: var(--color-white);
   }
 }
