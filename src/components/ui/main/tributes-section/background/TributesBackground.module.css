@@ -1,0 +1,68 @@
+.background_container {
+  display: grid;
+  max-width: 1360px;
+
+  overflow: hidden;
+
+  .mockingjay_graffiti {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+
+    transform: translateX(-100px);
+
+    background-image: url("../../../../../assets/images/mockingjay-graffiti.svg");
+    background-repeat: no-repeat;
+    background-position: center top 12px;
+    background-size: clamp(360px, 40%, 380px) auto;
+  }
+
+  .hands_wrapper {
+    position: relative;
+
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+
+    height: 100%;
+
+    display: grid;
+    align-items: end;
+    justify-items: center;
+
+    transform: translateX(100px);
+
+    svg {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+
+      width: 100%;
+      height: auto;
+
+      &:nth-child(1) {
+        z-index: 3;
+        max-width: 230px;
+      }
+      &:nth-child(2) {
+        z-index: 2;
+        max-width: 192px;
+        transform: translateX(-144px);
+      }
+      &:nth-child(3) {
+        z-index: 1;
+        max-width: 170px;
+        transform: translateX(116px);
+      }
+    }
+  }
+}
+
+@media (min-width: 834px) {
+  .background_container {
+    .mockingjay_graffiti {
+      transform: translateX(-320px);
+    }
+
+    .hands_wrapper {
+      transform: translateX(320px);
+    }
+  }
+}

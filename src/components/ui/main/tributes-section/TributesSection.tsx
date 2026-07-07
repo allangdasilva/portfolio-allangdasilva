@@ -1,17 +1,16 @@
+import { useRef } from "react";
 import { copyTributesSummary } from "../../../../data/section-summary.copy";
-import SectionBackground from "../../common/section/SectionBackground";
 import SectionSummary from "../../common/section/SectionSummary";
 import Tributes from "./tributes/Tributes";
 import styles from "./TributesSection.module.css";
+import TributesBackground from "./background/TributesBackground";
 
 const TributesSection = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
   return (
-    <section className={styles.section_wrapper}>
-      <SectionBackground>
-        <div className={styles.background_container}>
-          <div className={styles.background_image}></div>
-        </div>
-      </SectionBackground>
+    <section ref={sectionRef} className={styles.section_wrapper}>
+      <TributesBackground sectionRef={sectionRef} />
       <div className={"section_container"}>
         <SectionSummary
           sectionCopy={copyTributesSummary}
