@@ -4,22 +4,19 @@ import {
   useScroll,
   type Variants,
 } from "motion/react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import SectionBackground from "../../../common/section/SectionBackground";
 import HandOneSvg from "../../../../svgs/HandOneSvg";
 import HandTwoSvg from "../../../../svgs/HandTwoSvg";
 import HandThreeSvg from "../../../../svgs/HandThreeSvg";
 import styles from "./TributesBackground.module.css";
 
-type Props = {
-  sectionRef: React.RefObject<HTMLElement | null>;
-};
-
-const TributesBackground = ({ sectionRef }: Props) => {
+const TributesBackground = () => {
   const [animationStep, setAnimationStep] = useState(0);
+  const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
-    target: sectionRef,
+    target: ref,
     offset: ["start end", "end end"],
   });
 
@@ -37,18 +34,22 @@ const TributesBackground = ({ sectionRef }: Props) => {
   const mockingjayVariants: Variants = {
     offscreen: {
       opacity: 0.4,
+      transition: { duration: 0.8, ease: "easeIn" },
     },
     onscreen: {
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-      },
+      opacity: 0.8,
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
   const handVariants: Variants = {
     offscreen: {
       y: "100%",
+      transition: {
+        type: "tween",
+        ease: "easeIn",
+        duration: 0.4,
+      },
     },
     onscreen: (i: number) => ({
       y: 20,
@@ -63,7 +64,7 @@ const TributesBackground = ({ sectionRef }: Props) => {
 
   return (
     <SectionBackground>
-      <div className={styles.background_container}>
+      <div ref={ref} className={styles.background_container}>
         <motion.div
           variants={mockingjayVariants}
           initial="offscreen"

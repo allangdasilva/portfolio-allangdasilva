@@ -10,7 +10,7 @@ const TributesSection = () => {
 
   return (
     <section ref={sectionRef} className={styles.section_wrapper}>
-      <TributesBackground sectionRef={sectionRef} />
+      <TributesBackground />
       <div className={"section_container"}>
         <SectionSummary
           sectionCopy={copyTributesSummary}
