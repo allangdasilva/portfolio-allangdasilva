@@ -5,7 +5,7 @@
   background-color: var(--color-bg-yellow-500);
 }
 
-.background_container {
+/* .background_container {
   max-width: 1280px;
 }
 
@@ -28,7 +28,7 @@
     center left,
     center right,
     bottom right;
-}
+} */
 
 .section_summary span,
 .section_summary h2 {
@@ -41,7 +41,7 @@
   color: var(--color-black);
 }
 
-@media (min-width: 1020px) {
+/* @media (min-width: 1020px) {
   .background_image {
     background-image:
       url("../../../../assets//images/city-silhouette-1.svg"),
@@ -62,4 +62,4 @@
       bottom right,
       center center;
   }
-}
+} */
