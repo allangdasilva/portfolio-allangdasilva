@@ -3,14 +3,12 @@ import CitySilhouetteOneSvg from "../../../../svgs/CitySilhouetteOneSvg";
 import CitySilhouetteTwoSvg from "../../../../svgs/CitySilhouetteTwoSvg";
 import SectionBackground from "../../../common/section/SectionBackground";
 import styles from "./ToolsBackground.module.css";
+import { useRef } from "react";
 
-type Props = {
-  sectionRef: React.RefObject<HTMLElement | null>;
-};
-
-const ToolsBackground = ({ sectionRef }: Props) => {
+const ToolsBackground = () => {
+  const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
-    target: sectionRef,
+    target: ref,
     offset: ["start center", "end start"],
   });
 
@@ -37,6 +35,7 @@ const ToolsBackground = ({ sectionRef }: Props) => {
   return (
     <SectionBackground>
       <motion.div
+        ref={ref}
         variants={lightsContainerVariants}
         initial="offscreen"
         whileInView="onscreen"
