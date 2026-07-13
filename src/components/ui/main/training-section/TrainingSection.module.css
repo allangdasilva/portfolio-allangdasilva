@@ -3,28 +3,6 @@
   background-color: var(--color-bg-purple-500);
 }
 
-.background_container {
-  max-width: 1080px;
-}
-
-.background_image {
-  height: 100%;
-  background-image:
-    url("../../../../assets/images/air-drop-1.svg"),
-    url("../../../../assets/images/air-drop-2.svg"),
-    url("../../../../assets/images/arrow.svg");
-
-  background-repeat: no-repeat;
-  background-size:
-    clamp(108px, 20%, 168px) auto,
-    clamp(140px, 30%, 242px) auto,
-    auto 1360px;
-  background-position:
-    top 20px right 16px,
-    bottom 24px left 2px,
-    bottom -370px center;
-}
-
 .section_summary span,
 .section_summary h2 {
   color: var(--color-text-yellow-500);
@@ -33,17 +11,4 @@
   margin-top: 12px;
 
   color: var(--color-white);
-}
-
-@media (min-width: 834px) {
-  .background_image {
-    background-size:
-      clamp(108px, 20%, 168px) auto,
-      clamp(108px, 30%, 242px) auto,
-      auto 978px;
-    background-position:
-      top 20px right 16px,
-      bottom 24px left,
-      bottom -268px center;
-  }
 }

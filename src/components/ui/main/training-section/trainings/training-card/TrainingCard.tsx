@@ -24,7 +24,7 @@ const TrainingCard = ({ training, ...props }: Props) => {
     animate: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.4, ease: "easeOut" },
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 

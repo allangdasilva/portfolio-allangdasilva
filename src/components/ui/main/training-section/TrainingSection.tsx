@@ -1,17 +1,13 @@
 import { copyTrainingsSummary } from "../../../../data/section-summary.copy";
 import SectionSummary from "../../common/section/SectionSummary";
-import SectionBackground from "../../common/section/SectionBackground";
 import Trainings from "./trainings/Trainings";
 import styles from "./TrainingSection.module.css";
+import TrainingBackground from "./background/TrainingBackground";
 
 const TrainingSection = () => {
   return (
     <section className={styles.section_wrapper}>
-      <SectionBackground>
-        <div className={styles.background_container}>
-          <div className={styles.background_image}></div>
-        </div>
-      </SectionBackground>
+      <TrainingBackground />
       <div className={"section_container"}>
         <SectionSummary
           sectionCopy={copyTrainingsSummary}

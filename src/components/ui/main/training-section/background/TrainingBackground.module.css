@@ -1,0 +1,39 @@
+.background_container {
+  max-width: 980px;
+
+  overflow: hidden;
+
+  svg {
+    position: absolute;
+
+    width: 100%;
+    height: auto;
+
+    transform-origin: top center;
+  }
+
+  & svg:nth-child(1) {
+    max-width: 96px;
+
+    top: 80px;
+    right: 32px;
+  }
+  & svg:nth-child(2) {
+    max-width: 120px;
+
+    top: 25%;
+    left: 30%;
+  }
+  & svg:nth-child(3) {
+    max-width: 140px;
+
+    bottom: 40%;
+    right: 20%;
+  }
+  & svg:nth-child(4) {
+    max-width: 192px;
+
+    bottom: 80px;
+    left: 26px;
+  }
+}
