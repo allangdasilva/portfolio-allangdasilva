@@ -3,6 +3,7 @@ import ArrowSvg from "../../../../../svgs/ArrowSvg";
 import ItemHeading from "../../../../common/ItemHeading";
 import Paragraph from "../../../../common/Paragraph";
 import styles from "./TrainingCard.module.css";
+import { Counter } from "../../../../motion/Counter";
 
 type Props = HTMLMotionProps<"div"> & {
   training: {
@@ -44,7 +45,9 @@ const TrainingCard = ({ training, ...props }: Props) => {
         <motion.a href="#">
           <ArrowSvg />
         </motion.a>
-        <motion.span className="type_title_md">{progress}%</motion.span>
+        <motion.span className="type_title_md">
+          <Counter to={progress}></Counter>%
+        </motion.span>
       </motion.div>
     </motion.div>
   );
