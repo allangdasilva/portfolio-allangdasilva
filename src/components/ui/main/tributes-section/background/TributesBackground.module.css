@@ -4,16 +4,14 @@
 
   overflow: hidden;
 
-  .mockingjay_graffiti {
+  .background_image {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
 
-    transform: translateX(-100px);
-
     background-image: url("../../../../../assets/images/mockingjay-graffiti.svg");
     background-repeat: no-repeat;
-    background-position: center top 12px;
-    background-size: clamp(360px, 40%, 380px) auto;
+    background-position: calc(50% - 88px) -38px;
+    background-size: clamp(360px, 44%, 420px) auto;
   }
 
   .hands_wrapper {
@@ -57,8 +55,8 @@
 
 @media (min-width: 834px) {
   .background_container {
-    .mockingjay_graffiti {
-      transform: translateX(-320px);
+    .background_image {
+      background-position: 10% -44px;
     }
 
     .hands_wrapper {

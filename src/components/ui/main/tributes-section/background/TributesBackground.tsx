@@ -48,7 +48,7 @@ const TributesBackground = () => {
   return (
     <SectionBackground>
       <div ref={ref} className={styles.background_container}>
-        <div className={styles.mockingjay_graffiti}></div>
+        <div className={styles.background_image}></div>
         <div className={styles.hands_wrapper}>
           <HandOneSvg
             variants={handVariants}
