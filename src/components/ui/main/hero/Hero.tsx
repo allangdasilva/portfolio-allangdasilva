@@ -2,18 +2,14 @@ import clsx from "clsx";
 import ArrowDownSvg from "../../../svgs/ArrowDownSvg";
 import FadeUpEffect from "../../motion/FadeUpEffect";
 import Paragraph from "../../common/Paragraph";
-import SectionBackground from "../../common/section/SectionBackground";
 import HeroHeading from "./hero-heading/HeroHeading";
 import styles from "./Hero.module.css";
+import HeroBackground from "./background/HeroBackground";
 
 const Hero = () => {
   return (
     <header className={styles.hero_wrapper}>
-      <SectionBackground>
-        <div className={styles.background_container}>
-          <div className={styles.background_image}></div>
-        </div>
-      </SectionBackground>
+      <HeroBackground />
       <div className={clsx("section_container", styles.section_container)}>
         <div className={styles.content_wrapper}>
           <HeroHeading />

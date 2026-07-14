@@ -1,0 +1,25 @@
+.background_container {
+  max-width: 1280px;
+}
+
+.background_image {
+  height: 100%;
+
+  background-image: url("../../../../../assets/images/arrows.svg");
+  background-repeat: no-repeat;
+  background-size: 96px auto;
+  background-position: center bottom -40px;
+}
+
+.laurels {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% + 40px));
+}
+
+@media (min-width: 834px) {
+  .laurels {
+    transform: translate(-50%, calc(-50% + 60px));
+  }
+}

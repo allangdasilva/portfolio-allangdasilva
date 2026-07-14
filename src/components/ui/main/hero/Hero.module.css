@@ -14,19 +14,6 @@
   overflow: hidden;
 }
 
-.background_container {
-  max-width: 1280px;
-}
-
-.background_image {
-  height: 100%;
-
-  background-image: url("../../../../assets/images/laurels.svg");
-  background-repeat: no-repeat;
-  background-size: clamp(340px, 60%, 580px) auto;
-  background-position: center calc(50% + 50px);
-}
-
 .section_container {
   flex: 1;
   display: flex;
@@ -60,8 +47,5 @@
 @media (min-width: 834px) {
   .content_wrapper {
     gap: 32px;
-  }
-  .background_image {
-    background-position: center calc(50% + 80px);
   }
 }
