@@ -8,21 +8,6 @@
   padding-bottom: 224px;
 }
 
-.background_container {
-  max-width: 1180px;
-}
-
-.background_image {
-  position: relative;
-  top: -54px;
-  height: calc(100% + 54px);
-
-  background-image: url("../../../../assets/images/birds.svg");
-  background-repeat: no-repeat;
-  background-size: 376px auto;
-  background-position: calc(50% - -108px) top;
-}
-
 .section_summary span,
 .section_summary h2 {
   color: var(--color-text-yellow-500);
@@ -35,14 +20,5 @@
 @media (min-width: 834px) {
   .section_wrapper {
     padding-bottom: 348px;
-  }
-
-  .background_image {
-    top: -68px;
-    height: calc(100% + 68px);
-
-    background-image: url("../../../../assets/images/birds-desktop.svg");
-    background-size: contain;
-    background-position: calc(50% - -196px) bottom;
   }
 }
